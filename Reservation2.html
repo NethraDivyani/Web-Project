@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Cuisine - Reservation</title>
+  <link rel="stylesheet" href="css/Res2style.css">
+
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title span {
+  color: #FF5722; /* Accent color */
+}
+
+.page {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page li {
+  margin-left: 20px;
+}
+
+.page li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.page li a:hover {
+  color: #FF5722; /* Accent color */
+}
+
+.container {
+  padding: 120px 20px 20px; /* Increased padding to adjust for header */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  flex: 1;
+  min-width: 300px;
+  max-width: calc(33% - 10px); /* Adjust for gap */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: 200px; /* Fixed height for uniform appearance */
+}
+
+.reservation {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reservation h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.reservation label {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.reservation input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.reservation button {
+  background-color: #FF5722; /* Accent color */
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reservation button:hover {
+  background-color: #e64a19; /* Slightly darker shade */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto; /* Auto height to maintain aspect ratio */
+    margin-bottom: 20px;
+  }
+
+  .reservation {
+    padding: 15px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="nav-bar">
+      <h1 class="title"><span>Signature</span>Cuisine</h1>
+      <ul class="page">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Reservation2.html">Reservation</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Picture Gallery -->
+    <div class="gallery">
+      <img src="img/maintower-restaurant.jpg" alt="">
+      <img src="img/seating-interior.jpg" alt="">      
+      <img src="img/beautiful-views-over.jpg" alt="">
+    </div>
+
+    <!-- Reservation Form -->
+    <div class="reservation">
+      <h2 class="title-1">Make your reservation now</h2>
+      <form action="submit_reservation.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="people">Number of People:</label>
+        <input type="text" id="people" name="people" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit">Submit Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Signature Cuisine. All rights reserved.</p>
+  </footer>
+	
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+	
+<head>
+  <meta charset="utf-8">
+  <title>Signature Cuisine</title>
+  <link rel="stylesheet" href="css/IndexStyle.css">
+
+  <style>
+    @charset "utf-8";
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.title span {
+  color: #FF5722; /* Accent color */
+}
+
+.page {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page li {
+  margin-left: 20px;
+}
+
+.page li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.page li a:hover {
+  color: #FF5722; /* Accent color */
+}
+
+.btn {
+  margin-left: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF5722; /* Accent color */
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn a:hover {
+  background-color: #e64a19; /* Slightly darker shade */
+}
+
+.container {
+  padding: 100px 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.home .title-1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.home .title-1 span {
+  color: #FF5722; /* Accent color */
+}
+
+
+
+.home-button {
+  background-color: #FF5722; /* Accent color */
+  border: none;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-button:hover {
+  background-color: #e64a19; /* Slightly darker shade */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .page li {
+    margin: 10px 0;
+  }
+
+  .btn {
+    margin: 20px 0 0;
+  }
+
+  .container {
+    padding: 80px 20px 20px;
+  }
+
+  .home .title-1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+	
+	
+
+<body>
+	
+  <header class="header">
+    <div class="nav-bar">
+      <h1 class="title"><span>Signature</span> Cuisine</h1>
+      <ul class="page">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Reservation2.html">Reservation</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="ContactUs.html">Contact</a></li>
+      </ul>
+      <div class="btn">		  
+        <a href="Login.php">Signup</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="home">
+      <h1 class="title-1">Discover the extraordinary at <span>Signature</span> Cuisine,</h1>  
+      
+      <button type="button" class="home-button"><a href="Menu.html">Order Now</a></button>     
+	</div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2024 Signature Cuisine. All rights reserved.</p>
+  </footer>
+	
+</body>
+</html>

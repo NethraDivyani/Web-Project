@@ -1,0 +1,128 @@
+/* CSS Document */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  color: #fff;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 5px 0;
+}
+
+.nav-bar .title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+
+span {
+  color: #BCFD4C;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.page li {
+  list-style: none;
+  display: inline-block;
+}
+
+.page li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 150%;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: 0.4s ease;
+}
+
+.page li a:hover {
+  color: #BCFD4C;
+  padding: 10px 20px;
+  border: 2px solid;
+  cursor: pointer;
+}
+
+.container {
+  height: calc(100vh - 40px);
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: auto;
+  padding: 20px;
+}
+
+.container::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/Index_Wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e2e2e2;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
